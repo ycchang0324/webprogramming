@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Index</title>
-</head>
+    <head>
+        <title>Image Viewer</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="styles.css"
+        />
+    </head>
+    <body>
+        <script src="main.js"></script>
+        <div class="image-viewer__container">
+            <div class="image-viewer__title">
+                Image Viewer
+            </div>
+            <div class="image-viewer__main">
+                <div class="image-viewer__button" onclick="previousImg()">
+                    <img src="./images/back.png" id="previous" />
+                </div>
+                <div class="image-viewer__display">
+                    <img src="https://pic.pimg.tw/borntoshop/1505290211-334745832_l.jpg" id="display">
+                    <div class="image-viewer__display-source-wrapper" id="url">
+                        https://pic.pimg.tw/borntoshop/1505290211-334745832_l.jpg
+                    </div>
+                </div>
+               
+                <div class="image-viewer__button" onclick="nextImg()">
+                    <img src="./images/next.png" id="next" />
+                </div>
+            </div>
+        </div>
+        <!-- Try to implement an HTML that looks like the reference example:
+    ./images/screenshot.png  -->
+        <!-- Please use the class names and IDs as defined in styles.css
+     so that the outlook can be the same as the reference. -->
 
-
-<body>
- <a href="./music_player.html" target="_blank" title="Music Player">Music Player</a>
-</body>
+    </body>
 </html>
