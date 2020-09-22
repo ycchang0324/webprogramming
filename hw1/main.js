@@ -4,7 +4,7 @@ let image = [
     "https://pic.pimg.tw/borntoshop/1505290211-334745832_l.jpg",
     "https://img.ruten.com.tw/s1/4/49/63/21636520326499_443.jpg",
     "https://cdn.hk01.com/di/media/images/2919592/org/f2fbd5fc56d87c9a91005e210b8040a8.jpg/fw1DJzTPsN58gK2VUADPhug79gmtLJz9gMbtx4DG7cc?v=w1280r16_9"
-];
+    ]
 
 
 let pointer = 2;
@@ -15,7 +15,9 @@ function previousImg() {
         document.getElementById("display").src = image[ pointer ];   
     }
     changeOpacity();
-    document.getElementById("url").innerHTML = image[pointer];   
+    document.getElementById("href").href = image[ pointer ];   
+    document.getElementById("href").innerHTML = image [pointer ];  
+
 
 }
 
@@ -25,7 +27,8 @@ function nextImg() {
         document.getElementById("display").src = image[ pointer ];
     }   
     changeOpacity();
-    document.getElementById("url").innerHTML = image[pointer]; 
+    document.getElementById( "href" ).href = image[pointer];
+    document.getElementById( "href" ).innerHTML = image[ pointer ];  
 }
 
 function changeOpacity() {

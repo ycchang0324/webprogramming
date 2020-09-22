@@ -1,7 +1,21 @@
+.index__container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
 .index__title {
 	font-size: 5rem;
 	font-weight: 600;
 	color: #615dec;
+	margin: 0;
+	margin-top: 2rem;
+}
+.index__text {
+	font-size: 3rem;
+	font-weight: 600;
+	color: #13de5d;
 	margin: 0;
 	margin-top: 2rem;
 }
