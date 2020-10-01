@@ -14,8 +14,13 @@ document.addEventListener('click', function (e) {
          removeId = e.target.parentNode.id;
         
         for (var i = 0; i < itemArr.length; i++) {
-            if (i == removeId) 
+            if (i == removeId) {
                 itemArr.splice(i, 1);
+                isCompleteArr.splice(i, 1);
+                
+            } 
+                
+                
         }
         updateHTML(locate);
     }
