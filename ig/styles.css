@@ -1,0 +1,167 @@
+body{
+    background-color:black;
+}
+
+.ig-root{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    
+}
+
+
+.ig-header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+
+
+.ig-header div{
+    width: 25%;
+}
+
+.ig-header img{
+    margin-top: 20px;
+}
+.ig-main{
+    
+}
+
+.head-shot-container{
+    border-radius: 50%;
+    
+    display:flex;
+    justify-content:space-around;
+    
+}
+
+.head-shot-outside{
+    
+    background: -webkit-linear-gradient(90deg,yellow,red);
+    
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+.head-shot-outside-white{
+    
+    background: white;
+    
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.head-shot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    flex-direction: column;
+    
+}
+
+.head-shot img{
+    border-radius: 50%;
+    border: 10px;
+    
+    
+    
+    
+}
+.ig-post-info{
+    display: flex;
+    align-items: center;
+}
+
+.ig-post-info p{
+    width: 80%;
+}
+
+.ig-post-icon{
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+.ig-post-icon-image{
+    margin-left: 10px;
+}
+
+.ig-post-icon div{
+    width: 65%;
+}
+
+.ig-post-like, .ig-article-comment-input{
+    display: flex;
+    
+    align-items: center;
+}
+.ig-post-like img, .ig-article-comment-input img{
+    border-radius: 50%;
+}
+
+.ig-article-text{
+    display: flex;
+    
+    align-items: center;
+    line-height: 0px;
+}
+
+
+.ig-article-comment-line{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.ig-article-comment-line p{
+    width: 90%;
+    line-height: 0px;
+    
+}
+
+.ig-article-comment-input img{
+    margin-right: 10px;
+}
+.ig-article-comment-input p{
+
+    width: 68%;
+}
+.ig-article-footer{
+    display: flex;
+    
+    align-items: center;
+}
+
+.ig-footer{
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-top-color: #AAAAAA;
+    border-top-style: solid;
+    border-top-width: 1px;
+ 
+}
+
+
+
+
+.ig-footer img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}

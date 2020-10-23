@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>今晚，我想來點...</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="styles.css"
+        />
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Signika:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="dinner-picker__root">
+		<header class="dinner-picker__header">
+			<h1 class="dinner-picker__title">今晚，我想來點</h1>
+		</header>
+		
+		<section class="dinner-picker__selector">
+			<input type="radio"  checked name="category" 
+				   class="dinner-picker__choice" id="all" oninput=changeChoice("all")>全部</input>
+			<input type="radio" name="category" 
+			       class="dinner-picker__choice" id="cheap" oninput=changeChoice("超值美食")>超值美食</input>
+			<input type="radio" name="category" 
+			       class="dinner-picker__choice" id="medium"oninput=changeChoice("小確幸美食")>小確幸美食</input>
+			<input type="radio" name="category" 
+			       class="dinner-picker__choice" id="expensive" oninput=changeChoice("奢華美食")>奢華美食</input>
+		</section>
+		<section class="dinner-picker__main">
+			<button class="dinner-picker__button" id="button" >選擇</button>
+        </section>
+		<div class="dinner-picker__restaurant" id="restaurant">
+			<h2 class="dinner-picker__restaurant-category" ></h2>
+			<h3 class="dinner-picker__restaurant-name" ></h3>
+			<img class="dinner-picker__restaurant-image" src="./images/default__restaurant.jpg"/ >
+		</div>
+		<div class="dinner-picker__food-wrapper"id="food-root">
+			<div class="dinner-picker__food" >
+				<h3 class="dinner-picker__food-name" id="food-name-0"></h3>
+				<img class="dinner-picker__food-image" src="./images/default__food-0.jpg"/ >
+				<p class="dinner-picker__food-price"></p>
+			</div>
+			<div class="dinner-picker__food">
+				<h3 class="dinner-picker__food-name" id="food-name-1"></h3>
+				<img class="dinner-picker__food-image" src="./images/default__food-1.jpg"/ >
+				<p class="dinner-picker__food-price"></p>
+			</div>
+			<div class="dinner-picker__food">
+				<h3 class="dinner-picker__food-name" id="food-name-2"></h3>
+				<img class="dinner-picker__food-image" src="./images/default__food-2.jpg"/ >
+				<p class="dinner-picker__food-price"></p>
+			</div>
+			
+		</div>
+		<div class="dinner-picker__comment" id="comment">
+				<a hidden target="_blank"><h2 class="dinner-picker__comment">fb/評論連結</h2></a>		
+		</div>
+		<div class="dinner-picker__map" id="map">
+				<h2 class="dinner-picker__food-map"></h2>
+			<iframe hidden src="" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>;
+		</div>
+	</div>
+	
+	<script src="main.js" charset="big5"></script>
+</body>
+</html>
